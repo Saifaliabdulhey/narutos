@@ -1,0 +1,54 @@
+.header {
+    // position:fixed;
+    backdrop-filter: blur(20px);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // box-shadow: 0 0 10px 1px rgb(74, 0, 248);
+    z-index: 9999;
+    width: 100%;
+}
+
+.header__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: $s-size 0;
+    height: 200px;
+}
+
+.header_title {
+    color: rgb(153, 0, 255);
+    text-decoration: none;
+    display: flex;
+    h1 {
+        margin: 100px 30px;
+        color: rgb(153, 0, 255);
+       margin-top: 150px;
+       font-size:50px ;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    text-decoration: none;
+    p {
+        margin-right: 20px;
+        transition: all 0.3s;
+        &:hover {
+            color: rgb(172, 0, 252);
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+.logo {
+    width: 200px; 
+    height: 200px;
+    margin-top: 100px;
+}
+
