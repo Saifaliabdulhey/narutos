@@ -1,13 +1,13 @@
 import React, { Component, useEffect } from 'react'
 import numeral from 'numeral';
-import appleUsed from '../../appleUsed';
+import newApple from '../../newApple';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 
 
-export class AppleListItem extends Component {
+export class NewApple extends Component {
 
   constructor(props) {
     super(props)
@@ -35,7 +35,7 @@ export class AppleListItem extends Component {
     return (
       <div>
  {
-            appleUsed.map((item, index) => {
+            newApple.map((item, index) => {
             return <div class="table-row">
             <div class="table-cell brand first-cell">
               <p>xcvcxvcx</p>
@@ -82,4 +82,4 @@ export class AppleListItem extends Component {
   }
 }
 
-export default AppleListItem;
+export default NewApple;

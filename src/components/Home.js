@@ -20,6 +20,8 @@ import AppleList from "./listItems/AppleList";
 import AllInOneList from "./listItems/AllInOneList";
 import DesktopList from "./listItems/DesktopList";
 import PrinterList from './listItems/PrinterList'
+import AppleListItem from './listItems/AppleListItem'
+import NewApple from "./listItems/NewApple";
 
 function Home() {
   const { url, path } = useRouteMatch();
@@ -59,7 +61,7 @@ function Home() {
         </Route>
         <Route path="/home/accessories">
           <Desktop />
-          <DesktopList />
+          <AppleListItem/>
         </Route>
         <Route path="/home/allinone">
           <AllInOne />
@@ -67,11 +69,10 @@ function Home() {
         </Route>
         <Route path="/home/software" >
           <Software />
-          <AppleList />
+          <NewApple />
         </Route>
         <Route path="/home/printer" >
           <Printer />
-          <PrinterList />
         </Route>
       </Switch>
       <ExpenseList />
